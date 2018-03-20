@@ -116,7 +116,7 @@ set ( PACKAGE_STRING "LibTIFF Software 3.8.2" )
 set ( PACKAGE_TARNAME "tiff" )
 set ( PACKAGE_VERSION "3.8.2" )
 set ( PACKBITS_SUPPORT 1 )
-set ( PIXARLOG_SUPPORT 1 )
+set ( PIXARLOG_SUPPORT 0 )
 
 #Define to necessary symbol if this constant uses a non-standard name onyour system.
 #undef PTHREAD_CREATE_JOINABLE
@@ -170,7 +170,7 @@ configure_file ( ${CMAKE_CURRENT_SOURCE_DIR}/libtiff/tiffconf.h.cmake ${CMAKE_CU
 message ( "Configure: libtiff - done." )
 add_definitions ( -DHAVE_CONFIG_H )
 
-find_package ( ZLIB REQUIRED )
+#find_package ( ZLIB REQUIRED )
 find_package ( JPEG )
 
 include_directories ( ${ZLIB_INCLUDE_DIR} ${CMAKE_CURRENT_BINARY_DIR} )

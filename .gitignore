@@ -1,0 +1,6 @@
+/build/CMakeFiles
+/build/Win32
+/build/Debug
+/build/ipch
+/build/*.dir
+/build/*.suo
