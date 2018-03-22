@@ -4,3 +4,7 @@
 /build/ipch
 /build/*.dir
 /build/*.suo
+/build/x64
+/build/*.sdf
+/build/*.opensdf
+/build/Release
